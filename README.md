@@ -2,7 +2,9 @@
 
 Virtual Reality Experience landing page
 
-![sass-sticker](https://user-images.githubusercontent.com/25851867/27504435-d96d777a-584e-11e7-886d-01f0f49dac29.png)
+![Uploading Screen Shot 2017-06-23 at 8.18.04 PM.png…]()
+
+Also checkout my Treehouse profile [here](https://teamtreehouse.com/milestake).
 
 ## Getting Started
 
@@ -28,9 +30,7 @@ sass --watch scss:css
 
 ## Authors
 
-* **Esteban-Towerz** - *Initial work* - [Milestake Inc](https://github.com/milestake)
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
+* [Esteban-Towerz](https://github.com/Esteban-Towerz) - *Initial work* - [Milestake Inc](https://github.com/milestake)
 
 ## License
 
