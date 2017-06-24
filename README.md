@@ -2,7 +2,7 @@
 
 Virtual Reality Experience landing page
 
-![Uploading Screen Shot 2017-06-23 at 8.18.04 PM.png…]()
+<img width="1422" alt="vr" src="https://user-images.githubusercontent.com/25851867/27504565-ef031cea-5851-11e7-861e-564bbb999b8c.png">
 
 Also checkout my Treehouse profile [here](https://teamtreehouse.com/milestake).
 
