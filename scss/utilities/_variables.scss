@@ -1,0 +1,211 @@
+// ==========================================================================
+// Base Styles - VARIABLES
+// ==========================================================================
+
+@font-face {
+  font-family: "San Francisco";
+  font-weight: 400;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff");
+}
+
+/** Medium */
+@font-face {
+  font-family: "San Francisco";
+  font-weight: 500;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-medium-webfont.woff");
+}
+
+/** Semi Bold */
+@font-face {
+  font-family: "San Francisco";
+  font-weight: 600;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-semibold-webfont.woff");
+}
+
+/** Bold */
+@font-face {
+  font-family: "San Francisco";
+  font-weight: 700;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-bold-webfont.woff");
+}
+
+
+
+// Descriptive Base Colors ------------------------------------------------- */
+
+$color-primary  : #4abdac; // $fresh
+$color-primary-light: lighten($color-primary, 10%);
+$color-primary-dark: darken($color-primary, 5%);
+$color-secondary: #fc4a1a; // $vermillion
+$sunshine       : #f73333;
+$clean          : #dfdce3;
+
+$white : #fff;
+$black : #2B3646;;
+$grey  : #797e83;
+
+$color-accent: #eeea72;
+$color-shade : #eee;
+
+$color-text    : #343434;
+$color-bg      : #3acec2;
+$color-bg-light: #009fe1;
+
+
+$pale-gold     : #c0b283;
+$silk          : #dcd0c0;
+$paper         : #f4f4f4;
+$charcoal      : #373737;
+
+$warm-peach    : #cd5360;
+$summer-sky    : #286da8;
+$field         : #b37d4e;
+$breeze        : #438496;
+
+
+
+// Font Stacks ------------------------------------------------- */
+
+// $font-url--google     : 'https://fonts.googleapis.com/css?family=Lato:400,700|Open+Sans:400,700';
+$font-stack-primary   : "San Francisco";
+$font-stack-secondary : 'Vollkorn', serif;
+
+
+// Layout
+$max-width: 1000px;
+$gutter: 10px;
+
+// Grid ------------------------------------------------- */
+// $g-col-width    : 65px;
+// $g-gutter-width : 20px;
+// $g-col-count    : 12;
+// $g-cont-max-w   : 1050px;
+
+
+// Font Weights
+
+$font-weight--thin       : 100;
+$font-weight--light      : 300;
+$font-weight--medium     : 400;
+$font-weight--bold       : 700;
+$font-weight--ultra-bold : 900;
+
+// Alternatives Colors ------------------------------------------------- */
+
+$fountain-blue  : #52bab3;
+$emerald        : #5ece7f;
+$sunglo         : #e67478;
+$coral          : #ff784f;
+$purple-majesty : #9279c3;
+$scooter        : #39add1;
+$wild-watermelon: #FF4F79;
+$screamin-green : #59FFA0;
+$caribbean-green: #03D6A0;
+$google-blue    : #4285F4;
+$google-red     : #EA4335;
+$google-yellow  : #FBBC05;
+$google-green   : #34A853;
+$color-shade    : #C8D2DF;
+
+$amazon-yellow  : #F0C14B;
+$amazon-black   : #171717;
+
+
+// Import if Google Fonts URL is defined ------------------------------------------------- */
+
+@if variable-exists(font-url--google) {
+  @import url($font-url--google);
+}
+
+// ==========================================================================
+// COLOR PALETTE MAPS
+// ==========================================================================
+
+// Breakpoints
+$breakpoints: (
+  'xs': 575px,
+  'sm': 576px,
+ 'med': 768px,
+  'lg': 992px,
+);
+
+$social: (
+  'facebook' : #3b5998,
+  'dribbble' : #ea4c89,
+  'youtube'  : #e52d27,
+  'twitter'  : #00aced,
+);
+
+
+// Color Palette Modifiers - Map ------------------------------------------------- */
+
+$color-palettes: (
+  grey: (
+    xx-light : lighten($grey, 43%),
+    x-light  : lighten($grey, 35%),
+    light    : lighten($grey, 12%),
+    base     : $grey,
+    dark     : darken($grey, 8%),
+    x-dark   : darken($grey, 16%)
+  ),
+  black: (
+    light    : lighten($black, 30%),
+    base     : $black,
+    dark     : darken($black, 30%)
+  ),
+  primary: (
+    light    : lighten($color-primary, 30%),
+    base     : $color-primary,
+    dark     : darken($color-primary, 30%)
+  )
+);
+
+// map-get($scotch-colors, $key);
+// map-get($breakpoints, 'sm');
+// map-get($social, 'dribbble');
+
+// social('dribbble');
+
+// Usage
+// color: palette(black, dark); = darken($black, 10%);
+// color: palette(black, light); = lighten($black, 10%);
+// color: palette(grey, xx-light); = lighten($black, 10%);
+// color: palette(primary, dark); = darken($color-primary, 30%);
+// $color-shadow    : rgba($black, .2);
+
+
+// background-color: adjust-hue($summer-sky, $i * 20);
+
+// UI Colors - Map
+
+$ui-colors: (
+  default : $fountain-blue,
+  success : $google-green,
+  error   : $google-red,
+  warning : $coral,
+  info    : $google-blue
+);
+
+// adjust-hue($color, $degrees)
+// adjust-hue($google-red, $i * 20)
+
+// Theme colors
+$themes: (
+'arrow': $amazon-black,
+  'ent': #79ccf5,
+ 'arch': #fd6fa6,
+  'edu': #23bbae,
+  'sim': #2377bb,
+  'soc': #ada3f0,
+'games': #3cb144,
+);
+
+// Complement Colors - Map
+
+$base: $wild-watermelon;
+$base-dark: darken($base, 25%);
+$base-light: lighten($base, 25%);
+
+$complement: complement($base);
+$complement-light: lighten($complement, 10%);
+$complement-dark: darken($complement, 5%);

@@ -1,0 +1,41 @@
+// ======================================
+//  Base Styles
+// ======================================
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color: $charcoal;
+  font-size: .8rem; //font-size: 1rem;
+  line-height: 1.5; //line-height: 1.5;
+  font-family: $font-stack-primary;
+  text-align: center;
+  margin: 0;
+  // font: 14px/20px "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif;
+}
+
+h1,
+h2 {
+  font-family: $font-stack-primary;
+}
+
+p {
+  margin-bottom: 1.25em;
+}
+
+a {
+  color: $pale-gold;
+  text-decoration: none;
+  line-height: 1.45455;
+  font-weight: 300;
+  letter-spacing: .016em;
+  &:hover {
+    color: darken($pale-gold, 10%);
+    text-decoration: underline;
+  }
+  &:active {
+    text-decoration: none;
+  }
+}

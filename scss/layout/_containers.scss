@@ -1,0 +1,59 @@
+// ======================================
+//  Layout Container Styles
+// ======================================
+
+// Main content
+.main-content {
+  @include flexy($flex-wrap: wrap); // = display flex; flex-wrap: wrap;
+  @include mq('med') {
+    @include center(90%);
+  }
+}  
+
+
+// Inner
+.inner {
+  padding: 0.5em 1em;
+  p {
+    color: $amazon-yellow;
+    letter-spacing: .09em;
+  }
+}
+
+
+// Intro
+.intro {
+  font-family: $font-stack-primary;
+  margin: auto;
+  padding: 1em 1em 3em;
+  h2 {
+    font-size: 46px;
+    line-height: 1.10746;
+    margin-bottom: .2em;
+    margin-top: $gutter;
+    font-weight: 700;
+    letter-spacing: -.009em;
+  }
+  h3 {
+    font-size: 38px;
+    margin: 0;
+    line-height: .95865;
+    font-weight: 600;
+    letter-spacing: .001em;
+  }
+  p {
+    font-size: 0.95em;
+  } 
+  i {
+    font-size: 1.1rem;
+    margin-left: .4em;
+    font-weight: bold;
+    vertical-align: bottom;
+  }
+  @include mq('lg') {
+    width: 45%;
+  }
+}
+
+
+

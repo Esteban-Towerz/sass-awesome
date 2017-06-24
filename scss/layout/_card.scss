@@ -1,0 +1,51 @@
+// ======================================
+//  Card Styles
+// ======================================
+
+.card {
+  @include flexy($flex-dir: column); // = display: flex; flex-direction: column;
+  padding: 1.5em 1em;
+  border: 1px solid $color-shade;
+  border-radius: 0.25em;
+  margin: $gutter;
+  &:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 7px 14px rgba(50,50,93,.1), 0 3px 6px rgba(0,0,0,.08);
+    .material-icons {
+      color: lighten($charcoal, 15%);
+    }
+    svg {
+      transition: all 400ms ease; 
+      margin-left: 16px;
+      transform: translate(0px, 0px);
+      font-weight: 700;
+      font-size: 22px;
+      line-height: 18px;
+      color: $paper;
+    }
+    svg {
+      margin-left: 16px;
+      transform: translate(4px, 0px);
+      color: darken($paper, 20%);
+    }
+  }
+  h1 {
+    color: $pale-gold;
+    margin: 0.35em 0 0;
+    line-height: 1.25;
+  }
+  a {
+    &:hover {
+      text-decoration: underline;
+    }
+    &:active {
+      text-decoration: none;
+    }
+  }
+  @include mq('sm') {
+    flex: 1 per-line(2);
+  }
+  @include mq('lg') {
+    flex-basis: per-line(3);
+  }
+}

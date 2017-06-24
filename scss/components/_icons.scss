@@ -1,0 +1,14 @@
+// ======================================
+//  Icon Styles
+// ======================================
+
+.material-icons {
+	color: $charcoal;
+	opacity: 0.6;
+    font-size: 2.35em;
+    font-style: normal;
+}
+
+.icn {
+  @include themes($themes);
+}

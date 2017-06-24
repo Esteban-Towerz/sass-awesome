@@ -1,0 +1,23 @@
+// ======================================
+//  Navigation Styles
+// ======================================
+
+.main-nav {
+  margin-top: 1em;
+  li {
+    display: inline-block;
+    margin: 0 0.65em;
+  }
+  a {
+    color: $white;
+    // color: $base-light; //^^^^^
+    font-size: 0.85em;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 0.5em;
+    transition: 0.3s;
+    &:hover {
+      color: rgba($amazon-yellow, 0.7);  
+    }
+  }
+}
